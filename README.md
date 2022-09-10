@@ -11,3 +11,12 @@ The websites that this code was tested for include
 
 It is known to not work for a new website or the page that "a href" tag does not directly link to the file.
 It does not work for github.com.
+
+## Working Mechanism
+After calling the script by `python shallow_download.py`, enter the website URL (need slash at the end, "/").
+Then, it will download all files (excluding the files in subdirectories). It creates log file in sqlite format.
+
+## Requirements
+1. Sqlite3 (comes with Python, https://docs.python.org/3.8/library/sqlite3.html)
+2. BeautifulSoup (pip install beautifulsoup4), test with version 4.9.3py
+3. Python (test with Python 3.8.5)
